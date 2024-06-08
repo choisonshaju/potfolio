@@ -115,57 +115,77 @@ class _About_pageState extends State<About_page> {
               SizedBox(
                 height: 20,
               ),
-              Container(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.all(10),
-                      child: InkWell(
-                        onTap: () {
-                          _launcherURL(
-                              "https://www.linkedin.com/in/choisonshaju");
-                        },
-                        child: Container(
-                          height: 30,
-                          width: 30,
-                          child: Image.asset("assets/images/linkedin.png"),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(10),
+                    child: InkWell(
+                      onTap: () {
+                        _launcherURL(
+                            "https://www.linkedin.com/in/choisonshaju");
+                      },
+                      child: Container(
+                        height: 30,
+                        width: 30,
+                        child: Image.asset(
+                          "assets/images/linkedin.png",
+                          fit: BoxFit.cover,
                         ),
                       ),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.all(10),
-                      child: InkWell(
-                        onTap: () {
-                          _launcherURL(
-                              "https://www.instagram.com/choison_shaju/");
-                        },
-                        child: Container(
-                          height: 30,
-                          width: 30,
-                          child: Image.asset("assets/images/insta.jpeg"),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(10),
+                    child: InkWell(
+                      onTap: () {
+                        _launcherURL(
+                            "https://www.instagram.com/choison_shaju/");
+                      },
+                      child: Container(
+                        height: 30,
+                        width: 30,
+                        child: Image.asset(
+                          "assets/images/insta.jpeg",
+                          fit: BoxFit.cover,
                         ),
                       ),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.all(10),
-                      child: InkWell(
-                        onTap: () {
-                          _launcherURL(
-                              "https://www.facebook.com/choisonshaju.choisonshaju");
-                        },
-                        child: Container(
-                          height: 30,
-                          width: 30,
-                          child: Image.asset(
-                            "assets/images/facebook.png",
-                            fit: BoxFit.fill,
-                          ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(10),
+                    child: InkWell(
+                      onTap: () {
+                        _launcherURL(
+                            "https://www.facebook.com/choisonshaju.choisonshaju");
+                      },
+                      child: Container(
+                        height: 30,
+                        width: 30,
+                        child: Image.asset(
+                          "assets/images/facebook.png",
+                          fit: BoxFit.cover,
                         ),
                       ),
-                    )
-                  ],
-                ),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 10),
+                    child: InkWell(
+                      onTap: () {
+                        _launcherURL("https://github.com/choisonshaju");
+                      },
+                      child: Container(
+                        height: 35,
+                        width: 35,
+                        child: Image.asset(
+                          "assets/images/github.png",
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
               )
             ],
           ),

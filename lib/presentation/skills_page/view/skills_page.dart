@@ -22,59 +22,61 @@ class _Skills_pageState extends State<Skills_page> {
                   "assets/images/bg.jpeg",
                 ),
                 fit: BoxFit.fill)),
-        child: Column(
-          children: [
-            Row(
-              children: [
-                Padding(
-                  padding: const EdgeInsets.only(top: 150, left: 60),
-                  child: Container(
-                    child: Text(
-                      "Technical skill",
-                      style: TextStyle(
-                          fontSize: 40,
-                          fontWeight: FontWeight.bold,
-                          color: colorconstant.yellow),
-                    ),
-                  ),
-                ),
-              ],
-            ),
-            Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Padding(
-                  padding: const EdgeInsets.only(top: 20, left: 80),
-                  child: Container(
-                    child: Text(
-                      "FLUTTER \n\n DART \n\n PROVIDER \n\n HIVE \n\n API \n\n SHARED PREFERENCE \n\n C-PROGRAMMING \n\n DBMS \n\n OPERATING SYSTEM",
-                      style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          color: colorconstant.white,
-                          fontSize: 20),
-                    ),
-                  ),
-                ),
-                Stack(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.only(left: 600),
-                      child: Container(
-                        height: 400,
-                        width: 400,
-                        child: Lottie.asset(
-                          "assets/animations/skills.json",
-                          //fit: BoxFit.cover,
-                          // animate: true,
-                          //repeat: true,
-                        ),
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              Row(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(top: 150, left: 60),
+                    child: Container(
+                      child: Text(
+                        "Technical skill",
+                        style: TextStyle(
+                            fontSize: 40,
+                            fontWeight: FontWeight.bold,
+                            color: colorconstant.yellow),
                       ),
                     ),
-                  ],
-                ),
-              ],
-            ),
-          ],
+                  ),
+                ],
+              ),
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(top: 20, left: 80),
+                    child: Container(
+                      child: Text(
+                        "FLUTTER \n\n DART \n\n PROVIDER \n\n HIVE \n\n API \n\n SHARED PREFERENCE \n\n C-PROGRAMMING \n\n DBMS \n\n OPERATING SYSTEM",
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: colorconstant.white,
+                            fontSize: 20),
+                      ),
+                    ),
+                  ),
+                  Stack(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(left: 500),
+                        child: Container(
+                          height: 400,
+                          width: 400,
+                          child: Lottie.asset(
+                            "assets/animations/skills.json",
+                            fit: BoxFit.cover,
+                            // animate: true,
+                            //repeat: true,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ],
+          ),
         ),
       ),
     );

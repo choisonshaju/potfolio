@@ -72,7 +72,7 @@ class _Home_pageState extends State<Home_page> {
                 Padding(
                   padding: const EdgeInsets.only(left: 300),
                   child: Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.end,
                     children: [
                       CircleAvatar(
                         radius: 152,
